@@ -1,0 +1,67 @@
+{
+    "layer": "top",
+    "position": "top",
+    "height": 0,
+    "modules-left": ["custom/menu", "cpu", "memory", "disk", "network"],
+    "modules-center": ["hyprland/window"],
+    "modules-right": ["clock", "tray", "pulseaudio", "custom/logout"],
+    
+    "network": {
+	"interface": "enp37s0",
+	"format": "{ifname}",
+	"format-ethernet": " Wired",
+	"format-disconnected": "Disconnected",
+	"max-length": 50
+    },   
+
+    "custom/menu": {
+            "on-click": "wofi --show drun",
+            "format": "",
+            "tooltip": "false"    
+    },
+
+    "custom/logout": {
+            "on-click": "wlogout",
+            "format": "",
+            "tooltip": false
+    },
+
+    "disk": {
+	    "interval": 1,
+	    "format": " {free}"
+    },
+
+    "clock": {
+        "format": " {:%H:%M}"
+    },
+    
+    "hyprland/window": {
+        "max-length": 50,
+        "format": "{}"
+    },
+
+    "cpu": {
+        "interval": 1,
+        "format": " {usage}%",
+        "tooltip": false
+    },
+
+    "memory": {
+        "interval": 1,
+        "format": " {used}GiB"
+    },
+    
+    "tray": {
+        "icon-size": 15,
+        "spacing": 10
+    },
+
+    "pulseaudio": {
+        "format": "{icon} {volume}%",
+        "format-muted": "Muted",
+        "scroll-step": 1,
+        "format-icons": {
+            "default": ["", "", "墳", ""]
+        }
+    }
+}

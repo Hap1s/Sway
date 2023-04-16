@@ -1,0 +1,26 @@
+background-color=#20262c
+text-color=#cdd6f4
+border-color=#2f343f
+progress-color=over #313244
+
+sort=-time
+
+layer=overlay
+
+width=300
+
+height=110
+
+border-size=2
+
+border-radius=5
+
+icons=1
+
+max-icon-size=32
+
+default-timeout=6000
+
+ignore-timeout=1
+
+font=Liga SFMono Nerd Font 11

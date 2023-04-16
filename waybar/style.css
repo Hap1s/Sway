@@ -1,0 +1,70 @@
+* {
+    font-family: "Liga SFMono Nerd Font";
+    font-size: 13px;
+}
+
+#waybar {
+    background: #20262c;
+    color: #cdd6f4;
+    border-bottom: 2px solid #343a40;
+}
+
+#clock,
+#custom-icon1,
+#disk,
+#cpu,
+#window,
+#network,
+#memory,
+#custom-logout,
+#custom-menu,
+#pulseaudio,
+#tray,
+
+#barsettings {
+    padding: 7px 15px;
+    margin: 3px 0px;    
+    margin-top: 3px;
+}
+
+#network {
+    color: #eba0ac;
+}
+
+#window {
+    color: #fab387;
+}
+
+#clock {
+    color: #94e2d5;
+}
+
+#pulseaudio {
+    color: #a6e3a1;
+}
+
+#cpu {
+    color: #cba6f7;
+}
+
+#memory {
+    color: #f38ba8;
+}
+
+#disk {
+    color: #f5c2e7;
+}
+
+#custom-logout {
+    margin: 0px 0px;
+    border-radius: 14px 0px 0px 0px;
+    background: #343a40;
+    color: #94e2d5;
+}
+
+#custom-menu {
+    margin: 0px 0px;
+    border-radius: 0px 14px 0px 0px;
+    background: #343a40;
+    color: #89b4fa;	
+}
