@@ -8,8 +8,8 @@
     set $menu wofi
 
 # Autostart
-exec --no-startup-id autotiling
-exec --no-startup-id mako
+    exec --no-startup-id autotiling
+    exec --no-startup-id mako
 
 # Wallpaper
     output * bg ~/.config/hypr/wallpapers/n1.jpg fill
@@ -17,6 +17,9 @@ exec --no-startup-id mako
 # Border-colors
     client.focused			#b4a1db #b4a1db #b4a1db #b4a1db
     client.unfocused		        #343a40 #343a40 #343a40 #343a40
+    client.focused_inactive	        #343a40 #343a40 #343a40 #343a40
+    client.urgent			#343a40 #343a40 #343a40 #343a40
+    client.placeholder		        #343a40 #343a40 #343a40 #343a40
 
 # Border-settings
     default_border pixel 2
@@ -119,7 +122,7 @@ set $gnome-schema org.gnome.desktop.interface
     # $mod+b or $mod+v, for horizontal and vertical splits
     # respectively.
     bindsym --to-code $mod+b splith
-    bindsym --to-code $mod+v splitv
+    bindsym --to-code $mod+n splitv
 
     # Switch the current container between different layout styles
     bindsym --to-code $mod+s layout stacking
@@ -130,7 +133,7 @@ set $gnome-schema org.gnome.desktop.interface
     bindsym --to-code $mod+f fullscreen
 
     # Toggle the current focus between tiling and floating mode
-    bindsym --to-code $mod+Shift+v floating toggle
+    bindsym --to-code $mod+v floating toggle
 
     # Swap focus between the tiling area and the floating area
     bindsym --to-code $mod+space focus mode_toggle
